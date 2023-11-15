@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!--Boostrap Style Cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            >MP<span class="text-danger">COUNTRY-HOUSE</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-center mb-2 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Ana Sayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >Hakkımızda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#services"
+                >Servisler</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#portfolio"
+                >Portfolyo</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#team">Takım</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact"
+                >İletişim</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section id="home">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/home-1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+              <p><a href="" class="btn btn-warning">Daha Fazla</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home-2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+              <p><a href="" class="btn btn-warning">Daha Fazla</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home-3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+              <p><a href="" class="btn btn-warning">Daha Fazla</a></p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div data-aos="flip-up" class="row my-5 ">
+          <div data-aos="fade-right" class="col-lg-4 col-md-12">
+            <div class="about-img">
+              <img src="./images/about.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <div  data-aos="fade-left" class="col-lg-8 col-md-12">
+            <div class="about-text ps-lg-5 mt-5">
+              <h2>Her Zaman En iyi Kalite Hizmet Sağlıyoruz</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                nostrum iste mollitia odit eum sint perferendis minus modi
+                facere eaque, quidem libero voluptate asperiores vero totam.
+                Nobis blanditiis repellat hic culpa perferendis expedita,
+                inventore numquam tenetur fugit consectetur deserunt nisi?
+              </p>
+              <a href="" class="btn btn-warning">Daha Fazla</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h2>Servilerimiz</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste,
+                ducimus architecto. Suscipit saepe ad, molestiae ducimus
+                nesciunt soluta blanditiis facere!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-lg-4">
+            <div class="card bg-dark text-white text-center p-2 px-5 mb-3">
+              <i class="fa-solid fa-wand-magic-sparkles fs-2 mb-4 mt-2"></i>
+              <h3 class="card-title">En İyi Kalite</h3>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos similique error ad voluptate voluptatem id sint
+                optio, quaerat reprehenderit cum, debitis molestias! Impedit,
+                alias dolores. Mollitia enim dolor eligendi commodi?
+              </p>
+              <a class="btn btn-warning">Daha Fazla</a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="card bg-dark text-white text-center p-2 px-5 mb-3">
+              <i class="fa-solid fa-wand-magic-sparkles fs-2 mb-4 mt-2"></i>
+              <h3 class="card-title">En İyi Kalite</h3>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos similique error ad voluptate voluptatem id sint
+                optio, quaerat reprehenderit cum, debitis molestias! Impedit,
+                alias dolores. Mollitia enim dolor eligendi commodi?
+              </p>
+              <button class="btn btn-warning">Daha Fazla</button>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="card bg-dark text-white text-center p-2 px-5">
+              <i class="fa-solid fa-wand-magic-sparkles fs-2 mb-4 mt-2"></i>
+              <h3 class="card-title">En İyi Kalite</h3>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos similique error ad voluptate voluptatem id sint
+                optio, quaerat reprehenderit cum, debitis molestias! Impedit,
+                alias dolores. Mollitia enim dolor eligendi commodi?
+              </p>
+              <button class="btn btn-warning">Daha Fazla</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container" >
+        <div class="row">
+          <div class="col-12 text-center mt-5">
+            <h2>Projelerimiz</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, repellendus.
+            </p>
+          </div>
+        </div>
+
+        <div class="row gap-2 d-flex justify-content-between">
+          <div class="card bg-white text-center col-lg-3 mb-2 col-md-12">
+            <div class="card-body">
+              <div class="mb-4">
+                <img src="./images/project-1.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3>Bina Yapımı</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                sunt cum nesciunt temporibus sint similique, assumenda delectus
+                voluptatum aspernatur vero!
+              </p>
+              <button class="btn btn-warning">Keşfet</button>
+            </div>
+          </div>
+
+          <div class="card bg-white text-center col-lg-3 mb-2">
+            <div class="card-body">
+              <div class="mb-4">
+                <img src="./images/project-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3>Bina Yapımı</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                sunt cum nesciunt temporibus sint similique, assumenda delectus
+                voluptatum aspernatur vero!
+              </p>
+              <button class="btn btn-warning">Keşfet</button>
+            </div>
+          </div>
+
+          <div class="card bg-white text-center col-lg-3 mb-2">
+            <div class="card-body">
+              <div class="mb-4">
+                <img src="./images/project-3.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3>Bina Yapımı</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                sunt cum nesciunt temporibus sint similique, assumenda delectus
+                voluptatum aspernatur vero!
+              </p>
+              <button class="btn btn-warning">Keşfet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section-padding">
+      <div class="container" >
+
+        <div class="row">
+          <div class="col-12 text-center mt-5">
+            <h2>Ekip Üyelerimiz</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, repellendus.
+            </p>
+          </div>
+        </div>
+
+        <div class="row gap-2  d-flex justify-content-between">
+          <div class="card text-center col-lg-3 col-md-6 col-12">
+            <div class="card-body">
+              <img src="./images/team-1.jpg" alt="" class="img-fluid rounded-circle" />
+              <h3 class="py-2">Jack Wilson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea
+                magni neque quaerat consequuntur optio enim nam sint aut
+                tenetur?
+              </p>
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-threads"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-6 col-12">
+            <div class="card-body">
+              <img src="./images/team-2.jpg" alt="" class="img-fluid rounded-circle" />
+              <h3 class="py-2">Jack Wilson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea
+                magni neque quaerat consequuntur optio enim nam sint aut
+                tenetur?
+              </p>
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-threads"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-6 col-12">
+            <div class="card-body">
+              <img src="./images/team-3.jpg" alt="" class="img-fluid rounded-circle" />
+              <h3 class="py-2">Jack Wilson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea
+                magni neque quaerat consequuntur optio enim nam sint aut
+                tenetur?
+              </p>
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-threads"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="card text-center col-lg-3 col-md-6 col-12">
+            <div class="card-body">
+              <img src="./images/team-4.jpg" alt="" class="img-fluid rounded-circle" />
+              <h3 class="py-2">Jack Wilson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea
+                magni neque quaerat consequuntur optio enim nam sint aut
+                tenetur?
+              </p>
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-threads"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="row my-3">
+
+            <div class="col-md-12 text-center">
+                <h2>Bizimle İletişime Geçin</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia hic harum beatae fuga neque unde molestias laudantium ullam alias numquam?</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <form class="col-md-12 ">
+                <input type="text" class="form-control mb-2" placeholder="Adınızı Giriniz">
+                <input type="text" class="form-control mb-2" placeholder="Email Giriniz">
+                <textarea class="form-control mb-2" placeholder="Mesajınızı giriniz"></textarea>
+                <button class="btn btn-warning btn-lg w-100">Gönder</button>
+            </form>
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <div class="container">
+        <footer class="py-5 mt-2">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+         
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+       
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+         
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./animation.js"></script>
+  </body>
+</html>
